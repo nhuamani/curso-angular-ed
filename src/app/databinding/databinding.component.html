@@ -1,0 +1,22 @@
+<h1>Two Way Binding</h1>
+
+<h2>Two-way binding con controles de formulario</h2>
+
+<!-- Interpolación -->
+<h3>{{ course }} de <strong>{{ cardData.title }}</strong> desde Cero</h3>
+
+<!-- Property Binding -->
+<img [src]="cardData.imageUrl" alt="{{cardData.description}}">
+
+
+<!-- Event Binding -->
+
+<div>
+    <h3>{{ cardData.title }}</h3>
+    <p>{{ cardData.description }}</p>
+</div>
+
+<input type="text" [(ngModel)]="cardData.title" (input)="onChangeTitle($event)">
+
+<button (click)="changeTitle()">Change Course</button>
+
