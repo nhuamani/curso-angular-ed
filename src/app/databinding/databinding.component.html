@@ -20,3 +20,10 @@
 
 <button (click)="changeTitle()">Change Course</button>
 
+
+<h2>Two-way binding entre componentes</h2>
+
+<main>
+    <h2>Counter: {{ initialCount }}</h2>
+    <app-counter [(count)]="initialCount"></app-counter>
+</main>

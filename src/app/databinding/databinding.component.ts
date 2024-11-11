@@ -10,7 +10,6 @@ export class DatabindingComponent {
   // Interpolación
   course: string = 'Curso';
 
-
   // Property Binding
 
   cardData = {
@@ -28,5 +27,7 @@ export class DatabindingComponent {
   changeTitle(): void {
     this.cardData.title = "Python";
   }
+
+  initialCount = 11;
 
 }
