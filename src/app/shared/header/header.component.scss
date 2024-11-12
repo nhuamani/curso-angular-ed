@@ -1,0 +1,19 @@
+header {
+    background-color: teal;
+    color: white;
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        li {
+            max-height: 100%;
+
+            a {
+                color: white;
+                font-weight: 600;
+                padding: 1rem 2rem;
+            }
+        }
+    }
+}

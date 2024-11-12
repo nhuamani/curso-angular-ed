@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: 'data', component: DatabindingComponent }
+  { path: '', component: HomeComponent },
+  { path: 'data', component: DatabindingComponent },
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({
