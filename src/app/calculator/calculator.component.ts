@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-calculator',
@@ -14,8 +14,12 @@ export class CalculatorComponent {
   @Input()
   title: string = '';
 
+  @Output()
+  emmiter: EventEmitter<number> = new EventEmitter();
+
   calculateSum() {
     this.result = this.number1 + this.number2;
+    this.emmiter.emit(this.result);
   }
 
 }

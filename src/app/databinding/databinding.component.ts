@@ -32,4 +32,10 @@ export class DatabindingComponent {
 
   message = "Calculadora";
 
+  sumNumberResult: number = 0;
+
+  getSumNumberResult(e:number) {
+    this.sumNumberResult = e;
+  }
+
 }

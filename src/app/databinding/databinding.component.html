@@ -30,5 +30,6 @@
 
 
 <section>
-    <app-calculator [title]="message"></app-calculator>
+    <app-calculator [title]="message" (emmiter)="getSumNumberResult($event)"></app-calculator>
+    <p>Resultado: {{sumNumberResult}}</p>
 </section>
