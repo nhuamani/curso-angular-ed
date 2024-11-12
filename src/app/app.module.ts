@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
 import { CounterComponent } from './counter/counter.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DatabindingComponent,
-    CounterComponent
+    CounterComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,

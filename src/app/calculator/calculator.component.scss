@@ -1,0 +1,32 @@
+.calculator {
+    background-color: teal;
+    color: whitesmoke;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+
+    h2 {
+        text-align: center;
+    }
+
+    input {
+        height: 1rem;
+        padding: 0.25rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        background-color: purple;
+        border: 0;
+        border-radius: 0.5rem;
+        color: inherit;
+        padding: 0.4rem 0.8rem;
+        cursor: pointer;
+    }
+
+    p {
+        font-weight: bold;
+        text-align: center;
+    }
+}

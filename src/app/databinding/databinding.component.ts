@@ -30,4 +30,6 @@ export class DatabindingComponent {
 
   initialCount = 11;
 
+  message = "Calculadora";
+
 }
