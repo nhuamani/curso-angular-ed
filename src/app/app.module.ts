@@ -3,20 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DatabindingComponent } from './databinding/databinding.component';
-import { FormsModule } from '@angular/forms';
-import { CounterComponent } from './counter/counter.component';
-import { CalculatorComponent } from './calculator/calculator.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { HomeComponent } from './home/home.component';
+import { DatabindingModule } from './databinding/databinding.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DatabindingComponent,
-    CounterComponent,
-    CalculatorComponent,
     FooterComponent,
     HeaderComponent,
     HomeComponent
@@ -24,7 +18,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    DatabindingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
