@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { DatabindingComponent } from './databinding.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CounterComponent } from './counter/counter.component';
-import { AppRoutingModule } from '../app-routing.module';
+import { DatabindingRoutingModule } from './databinding-routing.module';
 
 
 @NgModule({
@@ -16,8 +16,8 @@ import { AppRoutingModule } from '../app-routing.module';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule,
-    FormsModule
+    FormsModule,
+    DatabindingRoutingModule
   ]
 })
 export class DatabindingModule { }
